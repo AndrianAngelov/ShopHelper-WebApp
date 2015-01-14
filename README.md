@@ -1,2 +1,2 @@
-ShopHelper-WebApp
+shophelper.apphb.com
 =================
