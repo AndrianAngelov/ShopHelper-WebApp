@@ -1,0 +1,14 @@
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\ShopHelperAsp.Common.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\ShopHelperAsp.Common.pdb
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\itextsharp.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\itextsharp.xml
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\obj\Debug\ResolveAssemblyReference.cache
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\obj\Debug\ShopHelperAsp.Common.dll
+D:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\obj\Debug\ShopHelperAsp.Common.pdb
+G:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\ShopHelperAsp.Common.dll
+G:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\ShopHelperAsp.Common.pdb
+G:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\itextsharp.dll
+G:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\bin\Debug\itextsharp.xml
+G:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\obj\Debug\ShopHelperAsp.Common.csprojResolveAssemblyReference.cache
+G:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\obj\Debug\ShopHelperAsp.Common.dll
+G:\new age\1 TELERIK\JobAttack\REAL\ASP.NET_WebForms\Projects\shophelper\ShopHelperAsp.Common\obj\Debug\ShopHelperAsp.Common.pdb

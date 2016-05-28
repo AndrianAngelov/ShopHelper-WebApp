@@ -1,0 +1,289 @@
+﻿/*
+A5CEDC-светло синьото
+DC4D00-оранжевото
+808080-gray
+D4DEDF-светло сивото ContentPlaceHolderColor
+F3F3F3-светло сиво почти бяло
+	*/
+body, header, section, footer, article, h1, h2, h3, h4, h5, h6, input, button, label, p, fieldset, nav, ul, li, a, span, strong, em
+{
+	margin: 0;
+	padding: 0;
+	border: 0; /*zoom: 1;*/
+}
+
+div, h1, h3, h4, h5, h6, header, footer, body, section, nav, article, aside
+{
+	display: block;
+}
+
+body
+{
+	font-family: "Helvetica Neue" , Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color: White;
+	background-color: rgb(212,222,223);
+}
+
+/*=========================== start HEADER styles ====================================*/
+body header 
+{
+	background-color: rgb(40,40,40);
+	padding:5px 5px 0 5px;
+    border-bottom: 2px solid rgb(220, 78, 0);
+}
+				
+	body header div#MainFormHeader div#logo-container
+	{
+		/*background-color:red;*/
+		float: left;
+		position: relative;
+	}
+	
+	body header div#MainFormHeader div#logo-container img
+	{
+		/*background-color:red;*/
+		float: left;
+		position: relative;
+		height:70px;
+	}
+		
+	body header div#MainFormHeader div#login-info
+	{
+		text-align:center;
+		float: right;
+		position: relative;
+		top: 50%; 
+		width:30%;
+		margin-top:10px;
+	}
+		/*=====start Login INFO text styles========*/
+		body header div#MainFormHeader div#login-info img
+		{
+			display:inline-block;
+            vertical-align:middle;
+		}
+				
+		body header div#MainFormHeader div#login-info div
+		{
+			display:inline-block;
+			text-align: left;
+			vertical-align:middle;
+			/*float:left;*/
+		}
+			body header div#MainFormHeader div#login-info div span
+			{
+				display:inline-block;
+				line-height:15px;
+				
+                margin-left: 1px;
+                vertical-align:text-bottom;
+			}
+				
+			/*body header div#MainFormHeader div#login-info div span:nth-child(5)
+			{
+				display:block;
+                margin-left: 1px;
+			}*/
+		/*=====end Login INFO text styles========*/	
+		
+		/*=====start LOGOUT BUTTON styles========*/		
+		body header div#MainFormHeader div#login-info input[type="submit"]
+		{
+			display:block;
+			margin:0 auto;
+            font-weight: bold;
+            border: 1px solid #603382;
+            border-style: outset;
+            border-radius: 3px;
+            padding: 3px 8px; 
+            margin-top:5px;
+		}
+			
+		body header div#MainFormHeader div#login-info input[type="submit"]:hover
+		{
+			color:#D4DEDF;
+			background-color: #DC4D00;
+            border-style: inset; 
+            cursor:pointer;
+		}
+		
+		body header div#MainFormHeader div#login-info input[type="submit"]:focus 
+		{
+			outline:0;
+		}
+		/*body header div#MainFormHeader div#login-info input[type="submit"]:active
+		{
+			margin-top:2px;
+		}*/
+		/*=====end LOGOUT BUTTON styles==========*/	
+/*=========================== end HEADER styles ====================================*/
+
+/*=========================== start SECTION styles ====================================*/
+		body section div#MainFormContent
+		{
+			background-color:  #A5CEDC;
+			/*background-image:url("~/../../Images/test_bg.png");
+			background-position:0%; 
+			background-repeat:repeat; */
+			/*background-image:url("~/../../Images/light_rock_54.jpg");
+			background-repeat:repeat;*/
+			/*background-image: radial-gradient(circle farthest-corner at 50px 100px , #A5CEDC 20%, #808080 60%);*/
+		}
+/*=========================== end SECTION styles ====================================*/
+
+/*=========================== start FOOTER styles ====================================*/
+body footer
+{
+	background-color: Gray;
+    /*clear: both;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-right: 0px;
+    padding-left: 0px;
+    border-top: 2px solid rgb(220, 78, 0);*/
+    position:relative;
+    
+}
+
+    body footer p 
+    {
+        /*font-size: 1.2em;
+        font-weight: bold;*/
+    }
+/*=========================== end FOOTER styles ====================================*/
+
+/*=========================== start aletr() styles ====================================*/
+.dialog.ui-dialog
+{
+	top:20px;
+}
+
+.dialog .ui-widget-header
+{
+	background:#DC4D00;
+	border:0;
+	border-radius:0;
+	display:none;
+}
+	.dialog .ui-widget-header .ui-button
+	{
+		display:none;
+	}
+	
+.dialog .ui-widget-content
+{
+	min-height:0 !important;
+	color:#282828;
+	background:#D4DEDF;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #808080;
+}
+
+.dialog .ui-dialog-buttonpane.ui-widget-content
+{
+	background-color:#A5CEDC;
+}
+.dialog .ui-dialog-buttonpane
+{
+	margin-top:0;
+	padding:0;
+	text-align:center;
+}
+	.dialog .ui-dialog-buttonpane .ui-dialog-buttonset
+	{
+		float:none;
+	}
+	
+		.dialog .ui-dialog-buttonpane .ui-dialog-buttonset button
+		{
+			margin-right:0;
+			color:#282828;
+			background:#D4DEDF;
+		}
+		
+			.dialog .ui-dialog-buttonpane .ui-dialog-buttonset button span.ui-button-text
+			{
+				padding:5px;
+				width:30px;
+			}
+			
+		.dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:hover
+		{
+			color:#fff;
+			background:#DC4D00;
+		}
+		
+		.dialog .ui-dialog-buttonpane .ui-dialog-buttonset button:active
+		{
+			margin-top:9px;
+		}
+
+
+/*=========================== end aletr() styles ====================================*/
+
+
+/*=========================== Clear parent containers of floated children ====================================*/
+div#MainFormHeader,div#MainFormContent
+{
+    zoom: 1;
+}
+
+     div#MainFormHeader:after,div#MainFormContent:after
+     {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+     }
+     
+/*#SaitMapWrapper {
+    background-color: Crimson;
+    margin: 0px 0px 5px 280px;
+    height: 50px;
+    width: 400px;
+}
+
+    #SiteMapPathBreadcrump {
+        color:White;
+        display:block;
+        height:auto;
+        
+    }*/
+
+/*#MainFormSidebar {
+    background-color: rgb(220, 78, 0);
+    color: White;
+    float: left;
+    margin: 15px 0px 0px 15px;
+    padding: 10px 10px 10px 10px;
+    height: 180px;
+}*/
+/*
+#MainFormFooter
+{
+	background-color: Gray;
+	width: 100%;
+	margin: auto;
+	padding: 5px 5px 5px 5px;
+	box-sizing: border-box;
+	border-radius: 2px;
+	position: absolute;
+	bottom: 10px;
+}
+/*
+#FooterContent
+{
+	line-height: 2.75em;
+	text-indent: 2.75em;
+	font-weight: 600;
+	color: rgb(40, 40, 40);
+	border-radius: 2px;
+}
+*/
+
+
+
+

@@ -1,0 +1,28 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/UI/Site.Master" AutoEventWireup="true"
+    CodeBehind="SubForms.master.cs" Inherits="ShopHelperAsp.UI.NestedMasterPage" %>
+
+<asp:Content ID="NastedHeader" ContentPlaceHolderID="MainFormHead" runat="server">
+    <link href="../../Css/SubForms.css" rel="stylesheet" type="text/css" />
+    <link href="../../Css/Menu_sub.css" rel="stylesheet" type="text/css" />
+     <%-- <link href="../../Css/SubFormsMenu.css" rel="stylesheet" type="text/css" runat="server" />--%>
+
+    <asp:ContentPlaceHolder ID="subFormsHead" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+<asp:Content ID="NastedContent" ContentPlaceHolderID="MainFormContentPlaceHolder" runat="server">
+    <div id="SubMenuWrapper">
+        <asp:Menu ID="SubMenu" runat="server" CssClass="menu" SkipLinkText="" EnableViewState="False"
+            IncludeStyleBlock="False" Orientation="Vertical" DataSourceID="SiteMapDataSourceSubFormsMenu"
+            StaticDisplayLevels="2" ItemWrap="True" 
+            onmenuitemdatabound="SubMenu_MenuItemDataBound">
+        </asp:Menu>
+    </div>
+    <div class="subFormsContentWrraper">
+        <asp:ContentPlaceHolder ID="subFormsContent" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <asp:SiteMapDataSource ID="SiteMapDataSourceSubFormsMenu" runat="server" 
+        StartingNodeOffset="1" />
+</asp:Content>
+

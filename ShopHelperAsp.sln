@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopHelperAsp", "ShopHelperAsp\ShopHelperAsp.csproj", "{617589B2-630B-4E2F-B73E-EDDCE8EC8DDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopHelperAsp.Data", "ShopHelperAsp.Data\ShopHelperAsp.Data.csproj", "{FAD183C0-98F1-4DDF-BCCB-322866F353C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopHelperAsp.Common", "ShopHelperAsp.Common\ShopHelperAsp.Common.csproj", "{1A442F5C-387A-488C-B45B-78BB97E94DB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{617589B2-630B-4E2F-B73E-EDDCE8EC8DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617589B2-630B-4E2F-B73E-EDDCE8EC8DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617589B2-630B-4E2F-B73E-EDDCE8EC8DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617589B2-630B-4E2F-B73E-EDDCE8EC8DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD183C0-98F1-4DDF-BCCB-322866F353C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD183C0-98F1-4DDF-BCCB-322866F353C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD183C0-98F1-4DDF-BCCB-322866F353C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD183C0-98F1-4DDF-BCCB-322866F353C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A442F5C-387A-488C-B45B-78BB97E94DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A442F5C-387A-488C-B45B-78BB97E94DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A442F5C-387A-488C-B45B-78BB97E94DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A442F5C-387A-488C-B45B-78BB97E94DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

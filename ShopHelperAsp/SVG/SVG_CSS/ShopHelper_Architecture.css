@@ -1,0 +1,103 @@
+﻿/*#pagewrap{
+	text-align:center;
+	height:700px;
+	background-color:#282828;
+}
+*/
+/*#object
+{
+	margin-top:200px;
+	background-color:#A5CEDC;
+}*/
+
+/*==========================start FILL PATHS========================================*/
+.webPC-path
+{
+	fill:url(#WebPC-pattern) ;
+}
+
+.desktopPC-path
+{
+	fill:url(#DesktopPC-pattern) ;
+}
+.AspServer-path
+{
+	fill:url(#AspServer-pattern) ;
+}
+.WCFServer-path
+{
+	fill:url(#WCFServer-pattern) ;
+}
+.SQLServer-path
+{
+	fill:url(#SQLServer-pattern) ;
+}
+.logo-face
+{
+	fill:#FFF8DC;
+}
+.logo-eyes
+{
+	fill:#282828;
+}
+/*==========================end FILL PATHS========================================*/
+
+/*==========================start TEXT styles========================================*/
+g#TEXT
+{
+	/*fill:#A5CEDC;*/
+	fill:#282828;
+	font-family:'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size:14px;
+	font-weight :bold;
+}
+
+g#TEXT text#BAL-DAL
+{
+	font-size:10px;
+}
+/*==========================end TEXT styles========================================*/
+
+/*==========================start LOGO Animation========================================*/
+.logo{
+	-webkit-animation-name: showAndTranslateLogo;
+    -webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-fill-mode:forwards;
+	
+	-moz-animation-name: showAndTranslateLogo;
+    -moz-animation-duration: 2s;
+	-moz-animation-iteration-count: 1;
+	-moz-animation-fill-mode:forwards;	
+}
+@-webkit-keyframes showAndTranslateLogo {
+    0% {
+        opacity: 0.1;
+		-webkit-transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+		-webkit-transform: translateX(0);
+    }
+}
+
+@-moz-keyframes showAndTranslateLogo {
+    0% {
+        opacity: 0.1;
+		-moz-transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+		-moz-transform: translateX(0);
+    }
+}
+/*==========================end LOGO Animation========================================*/
+
+
+
+
+
+
+

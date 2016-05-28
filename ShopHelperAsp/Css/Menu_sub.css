@@ -1,0 +1,90 @@
+﻿/*
+A5CEDC-светло синьото
+DC4D00-оранжевото
+808080-gray
+D4DEDF-светло сивото
+F3F3F3-светло сивото
+	*/
+	
+div#SubMenuWrapper
+{
+	margin-right:10px;
+	height:100%;
+}
+
+	div#SubMenuWrapper div#SubMenu
+	{
+		padding:7px 10px 10px 10px;
+		background-color:#282828;
+		border-bottom-right-radius:5px;
+	}
+		div#SubMenuWrapper div#SubMenu ul
+		{
+			float: none !important;
+			list-style-type:none;
+		}
+		
+			
+			div#SubMenuWrapper div#SubMenu ul li
+			{
+			}
+			
+			/*Level1:Employees,Manager,Admin*/
+			div#SubMenuWrapper div#SubMenu ul li:nth-child(1)
+			{
+				text-align:center;
+			}
+				div#SubMenuWrapper div#SubMenu ul li a
+				{
+					color:#282828;
+					background-color:#F3F3F3;
+					font-size:12px;
+					font-weight:bold;
+					text-decoration:none;
+					padding:5px;
+					display:block;
+					/*display:inline-block;
+					vertical-align:middle;*/
+				}
+				
+				div#SubMenuWrapper div#SubMenu ul li a img
+				{
+					vertical-align:middle;
+					margin-right:5px;
+				}
+				
+				/*Level1 a:Employees,Manager,Admin*/
+				div#SubMenuWrapper div#SubMenu ul li:nth-child(1) a
+				{
+					color:#F3F3F3;
+					background-color:#282828;
+					font-size:14px;
+					border-top-left-radius:3px;
+					border-top-right-radius:3px;
+					display:none;
+				}
+				
+				div#SubMenuWrapper div#SubMenu ul li a.level2
+				{
+					border-bottom:1px solid #282828;
+				}
+				
+				div#SubMenuWrapper div#SubMenu ul li a.level2:hover
+				{
+					color:#282828;
+					background-color:#A5CEDC;
+				}
+			
+				div#SubMenuWrapper div#SubMenu ul li a.aspNetDisabled
+				{
+					color:#F3F3F3;
+					background-color:#DC4D00;
+				}
+				div#SubMenuWrapper div#SubMenu ul li a.aspNetDisabled:hover
+				{
+					background-color:#DC4D00;
+				}
+div#SubMenu ul:focus ,div#SubMenu a:focus 
+{
+	outline:0;
+}

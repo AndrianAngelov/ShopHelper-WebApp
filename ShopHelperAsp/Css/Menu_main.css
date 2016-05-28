@@ -1,0 +1,81 @@
+﻿/*
+A5CEDC-светло синьото
+DC4D00-оранжевото
+808080-gray
+D4DEDF-светло сивото
+	*/
+	
+nav#MainMenuWrapper
+{
+	background-color:#A5CEDC;
+	border-bottom: 2px solid #DC4D00;
+}
+
+	nav#MainMenuWrapper div#MainMenu
+	{
+		background: #282828;
+		width:100%;
+		margin:0 auto;
+		position:relative;
+		float: none !important; 
+	}
+	
+		nav#MainMenuWrapper div#MainMenu ul
+			{
+    
+				list-style-type:none;
+				text-align:center;
+				width:50% !important;
+				margin:0 auto;
+				float: none !important; 
+			}
+			
+			nav#MainMenuWrapper div#MainMenu ul li 
+			{
+				float: none !important; 
+				display:inline-block;
+			}
+			
+			nav#MainMenuWrapper div#MainMenu ul li a
+			{
+				font-weight:bold;
+				display:inline-block;
+				padding:10px;
+				border-left: 1px solid #D4DEDF;
+			}
+			
+			nav#MainMenuWrapper div#MainMenu ul li:nth-child(1) a
+			{
+				background-repeat:no-repeat;
+				background-image:url("~/../../Images/MainMenu/home.png");
+				padding-left:35px;
+			}
+			
+			nav#MainMenuWrapper div#MainMenu ul li:nth-last-child(1) a
+			{
+				border-right:1px solid #D4DEDF;
+			}
+			
+	
+				nav#MainMenuWrapper div#MainMenu ul li a
+				{
+					color:#D4DEDF;
+					text-decoration:none;
+				}
+				
+			nav#MainMenuWrapper div#MainMenu ul li a:hover
+			{
+				color:#282828;
+				background-color:#A5CEDC;
+			}
+			
+			nav#MainMenuWrapper div#MainMenu ul li a.selected
+			{
+				background-color:#DC4D00;
+			}
+			
+			nav#MainMenuWrapper div#MainMenu ul,nav#MainMenuWrapper div#MainMenu ul li a:focus 
+			{
+				outline:0;
+			}
+			

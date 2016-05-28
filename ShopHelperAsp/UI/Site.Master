@@ -1,0 +1,269 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ShopHelperAsp.Site"
+     ClientIDMode="Static"%>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <meta name="google-site-verification" content="Xjiw0NtouBnC5By5HGoA4grEEEkKlpAk-aYGkk8AixY" />
+    <meta name="author" content="Andrian Angelov">
+    <meta name="description" content="This Inventory system is Andrian Angelov first asp.net project">
+    <meta name="keywords" content="Andrian,Angelov, ShopHelper,Inventory,Shop,Helper,HTML5,ASP.NET,CSS" />
+    <title>Shop Helper - Inventory management system </title>
+    <link rel="shortcut icon" type="image/x-icon" href="~/Images/ShopHelper.ico" />
+    <link rel="author" href="http://shophelper.apphb.com/Images/google.png" />
+    <link href="~/Scripts/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/MainForm.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/Menu_main.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/Breadcrump.css" rel="stylesheet" type="text/css" />
+    <link href="~/Css/Form_Footer.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <%--<link href="~/Scripts/jquery-ui-1.10.4/css/ui-lightness/jquery-ui-1.10.4.min.css" rel="stylesheet" type="text/css" />--%>
+    <script src="../../Scripts/jquery-ui-1.10.4/js/jquery-ui-1.10.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+       
+    </script>
+    <asp:ContentPlaceHolder ID="MainFormHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+   
+    <form id="MainForm" runat="server">
+    <div id="Page">
+        <header>
+            <div id="MainFormHeader">
+                <div id="logo-container">
+                    <h1>
+                        <img id="Logo" src="~/Images/HeaderLogo.png" alt="ShopHelper-Logo"
+                            runat="server">
+                    </h1>
+                </div>
+                <div id="login-info">
+                    <asp:Image ID="LoginUserProfileImage" runat="server" Height="50px" Width="50px" Visible="false"/>
+                    <div>
+                        <asp:LoginView ID="LoginView" runat="server">
+                            <LoggedInTemplate>
+                                <span>Welcome,</span>
+                                <asp:LoginName ID="LoginName" runat="server" />
+                                <span>!</span>
+                            </LoggedInTemplate>
+                            <%-- <AnonymousTemplate>
+                            Annonymous</AnonymousTemplate>--%>
+                        </asp:LoginView>
+                        <asp:Button ID="ButtonLogout" runat="server" OnClick="ButtonLogout_Click" Text="logout"
+                        CssClass="logout_btn" Visible="False" />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <nav Id="MainMenuWrapper" visible="false" runat="server" >
+            <asp:Menu ID="MainMenu" runat="server" CssClass="menu" SkipLinkText="" EnableViewState="false"
+                IncludeStyleBlock="False" Orientation="Horizontal" DataSourceID="SiteMapDataSource"
+                StaticDisplayLevels="2" MaximumDynamicDisplayLevels="0"
+                StaticSelectedStyle-CssClass="selected" 
+                onmenuitemclick="MainMenu_MenuItemClick" 
+                onmenuitemdatabound="MainMenu_MenuItemDataBound" ItemWrap="True">
+            </asp:Menu>
+        </nav>
+
+        <div id="BreadcrumpWrapper" visible="false" runat="server">
+            <asp:SiteMapPath ID="Breadcrump" runat="server" PathSeparator="" 
+                CurrentNodeStyle-CssClass="currentNode" >
+                <PathSeparatorStyle CssClass="separator" />
+            </asp:SiteMapPath>
+        </div>
+
+        <section>
+            <div id="MainFormContent">
+                <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true"></asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="MainFormContentPlaceHolder" runat="server" >
+                </asp:ContentPlaceHolder>
+            </div>
+        </section>
+
+
+        <footer id="MainFooter">
+            <section class="footerLinkContainerWrapper" runat="server">
+                <article class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Sofia</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+                <article id="Article1" class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Silistra</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+                <article id="Article2" class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Kazanlak</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+                <article id="Article3" class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Kavarna</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+                <article id="Article4" class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Sliven</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+                <article id="Article5" class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Lovech</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+                <article id="Article6" class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Varna</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+                <article id="Article7" class="footerLinkContainer" runat="server">
+                    <h4>
+                        <a href="#">Office-Burgas</a></h4>
+                    <ul>
+                        <li><span>Address:</span> <a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">
+                            1000 Sofia,Bulgaria</a> </li>
+                        <li><span>Tel:</span> <a href="#">+359 000 00 00 00</a> </li>
+                        <li><span>e-mail:</span> <a href="#">shophelper@abv.bg</a> </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="FooterBar">
+                <article class="copy-right" runat="server">
+                    <p>
+                        Copyright © 2014 Andrian Angelov. All rights reserved.
+                    </p>
+                    <p>
+                        <a href="#">Shop Helper Inventory System 0.0 </a>
+                    </p>
+                    <p>
+                        <span>Design By:</span><a href="https://maps.google.com/?ll=42.690543,23.338405&spn=0.004692,0.006899&t=m&z=17">Andrian.Angelov@abv.bg</a></p>
+                </article>
+                <article>
+                    <a>
+                        <img id="CompanyLogo" src="~/Images/company_logo.png" alt="Newbie-Code-Logo" runat="server">
+                    </a>
+                </article>
+                <article>
+                    <ul id="SocialNetworks" class="right">
+                        <li id="facebook"><a href="https://www.facebook.com"></a></li>
+                        <li id="youtube"><a href="https://www.youtube.com"></a></li>
+                        <li id="googlepluse"><a href="https://plus.google.com"></a></li>
+                    </ul>
+                </article>
+            </section>
+        </footer>
+    </div>
+    <asp:HiddenField ID="saveSrollPositionY" runat="server" />
+    </form>
+    <asp:SiteMapDataSource ID="SiteMapDataSource" runat="server" />
+     <script type="text/javascript">
+         $(document).ready(function () {
+             window.onload = function () {
+                 var position = parseInt($('#saveSrollPositionY').val());
+                 if (!isNaN(position)) {
+                     $(window).scrollTop(position);
+
+                 }
+                 var dialog = $(".dialog.ui-dialog");
+                 var dialogSTR = position + window.innerHeight / 2 - dialog.height() + "px";
+                 dialog.css('top', dialogSTR);
+                 dialog.show();
+//                 var dialogTopOffset = window.innerHeight / 2 + position - 100 / 2;
+//                 var offset = dialog.offset();
+             };
+             window.onscroll = function () {
+                 var position = $(window).scrollTop();
+                 $('#saveSrollPositionY').val(position);
+
+             };
+         });
+
+         window.alert = function (title, message) {
+             $("#alert").attr("title", title);
+             $("#alert").html(message);
+             $("#alert").dialog({
+                 buttons:
+                {
+                    OK: function () { $(this).dialog("close"); }
+                },
+                draggable: true,
+                modal: true,
+                resizable: false,
+                width: 'auto',
+                closeOnEscape: false,
+                dialogClass: "dialog",
+                open: function (event, ui) { setTimeout("$('#alert').dialog('close')", 100000) }
+             });
+         };
+
+         function showStatusMessage(message) {
+             alert("", message);
+             return false;
+         }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var menuItems = $("#MainMenu ul li a");
+            var url = location.pathname;
+
+            if (url.indexOf('Home') > -1) {
+                var homeMenuItem = $("#MainMenu ul li a:first");
+                homeMenuItem.addClass("selected");
+            }
+            if (url.indexOf('Employees') > -1) {
+                var employeesMenuItem = $("#MainMenu ul li:nth-child(2) a");
+                employeesMenuItem.addClass("selected");
+            }
+
+            if (url.indexOf('Manager') > -1) {
+                var managerMenuItem = $("#MainMenu ul li:nth-child(3) a");
+                managerMenuItem.addClass("selected");
+            }
+            if (url.indexOf('Admin') > -1) {
+                var adminMenuItem = $("#MainMenu ul li a:last");
+                adminMenuItem.addClass("selected");
+            }
+
+        });  
+    </script>
+</body>
+</html>

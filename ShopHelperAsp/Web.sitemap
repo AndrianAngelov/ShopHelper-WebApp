@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home" description="" url="~/Home">
+    <siteMapNode title="Employees" description="Employees Page" url="~/Employees/TopSeller#">
+      <siteMapNode title="Top seller" description="Top saler page" url="~/Employees/TopSeller" />
+    </siteMapNode>
+    <siteMapNode title="Manager" description="Manager Page" url="~/Manager/Products#" >
+      <siteMapNode title="Products" description="Products page" url="~/Manager/Products" />
+      <siteMapNode title="Categories" description="Categories page" url="~/Manager/Categories" />
+      <siteMapNode title="Vendors" description="Vendors page" url="~/Manager/Vendors" />
+      <siteMapNode title="Stores" description="Stores page" url="~/Manager/Stores" />
+      <siteMapNode title="Towns" description="Townss page" url="~/Manager/Towns" />
+    </siteMapNode>
+    <siteMapNode title="Admin" description="Admin Page" url="~/Admin/UsersAccountsManagment#">
+      <siteMapNode title="Users Accounts" description="UsersManagement" url="~/Admin/UsersAccountsManagment" />
+      <siteMapNode title="Roles" description="Roles page" url="~/Admin/RolesManagment" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

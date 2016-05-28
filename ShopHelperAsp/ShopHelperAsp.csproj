@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{617589B2-630B-4E2F-B73E-EDDCE8EC8DDC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShopHelperAsp</RootNamespace>
+    <AssemblyName>ShopHelperAsp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CloudinaryDotNet">
+      <HintPath>..\packages\CloudinaryDotNet.1.0.14\lib\net40\CloudinaryDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp.5.5.1\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.4.5.11\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Css\Breadcrump.css" />
+    <Content Include="Css\Form_Footer.css" />
+    <Content Include="Css\Form_Login.css" />
+    <Content Include="Css\Form_RolesCenter.css" />
+    <Content Include="Css\Form_UsersAccounts.css" />
+    <Content Include="Css\GridView.css" />
+    <Content Include="Css\Menu_main.css" />
+    <Content Include="Css\Menu_sub.css" />
+    <Content Include="Css\SubForms.css" />
+    <Content Include="Css\SubFormsMenu.css" />
+    <Content Include="Css\MainForm.css" />
+    <Content Include="Css\Validation.css" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\30-pixel-patterns.png" />
+    <Content Include="Images\adobe_exportPDF_icon_hover.png" />
+    <Content Include="Images\adobe_exportPDF_icon_normal.png" />
+    <Content Include="Images\company_logo.png" />
+    <Content Include="Images\google.png" />
+    <Content Include="Images\HeaderLogo.png" />
+    <Content Include="Images\HeaderLogo_PDF.png" />
+    <Content Include="Images\light_rock_54.jpg" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\login-background.png" />
+    <Content Include="Images\MainMenu\adminIcon.png" />
+    <Content Include="Images\MainMenu\home.png" />
+    <Content Include="Images\ShopHelper.ico" />
+    <Content Include="Images\ShopHelper_HoodHelper_v1.png" />
+    <Content Include="Images\ShopHelper_HoodHelper_v2.png" />
+    <Content Include="Images\social-media-gif.gif" />
+    <Content Include="Images\social-sprite-icons.png" />
+    <Content Include="Images\SubMenu\Original_user-password.png" />
+    <Content Include="Images\SubMenu\RolesCenterIcon.png" />
+    <Content Include="Images\SubMenu\user-password.png" />
+    <Content Include="Images\validation-arrow.png" />
+    <Content Include="Scripts\ExternalLibs\jquery.fileDownload.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4\css\ui-lightness\jquery-ui-1.10.4.min.css" />
+    <Content Include="Scripts\jquery-ui-1.10.4\js\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-ui-1.10.4\js\jquery-ui-1.10.4.min.js" />
+    <Content Include="SVG\SVG.aspx" />
+    <Content Include="SVG\SVG_CSS\ShopHelper_Architecture.css" />
+    <Content Include="UI\Admin\AdminHome.aspx" />
+    <Content Include="UI\Admin\RolesCenter.aspx" />
+    <Content Include="UI\Admin\UsersAccounts.aspx" />
+    <Content Include="UI\Employees\EmployeesHome.aspx" />
+    <Content Include="UI\Employees\TopSeller.aspx" />
+    <Content Include="UI\Login.aspx" />
+    <Content Include="Scripts\MainMenu.js" />
+    <Content Include="UI\Home.aspx" />
+    <Content Include="UI\Manager\Categories.aspx" />
+    <Content Include="UI\Manager\ManagerHome.aspx" />
+    <Content Include="UI\Manager\Products.aspx" />
+    <Content Include="UI\Manager\Stores.aspx" />
+    <Content Include="UI\Manager\Towns.aspx" />
+    <Content Include="UI\Manager\Vendors.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="SVG\SVG.aspx.cs">
+      <DependentUpon>SVG.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SVG\SVG.aspx.designer.cs">
+      <DependentUpon>SVG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\RolesCenter.aspx.cs">
+      <DependentUpon>RolesCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\RolesCenter.aspx.designer.cs">
+      <DependentUpon>RolesCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Admin\UsersAccounts.aspx.cs">
+      <DependentUpon>UsersAccounts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Admin\UsersAccounts.aspx.designer.cs">
+      <DependentUpon>UsersAccounts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Employees\EmployeesHome.aspx.cs">
+      <DependentUpon>EmployeesHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Employees\EmployeesHome.aspx.designer.cs">
+      <DependentUpon>EmployeesHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Employees\TopSeller.aspx.cs">
+      <DependentUpon>TopSeller.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Employees\TopSeller.aspx.designer.cs">
+      <DependentUpon>TopSeller.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Manager\Categories.aspx.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Manager\Categories.aspx.designer.cs">
+      <DependentUpon>Categories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Manager\ManagerHome.aspx.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Manager\ManagerHome.aspx.designer.cs">
+      <DependentUpon>ManagerHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Manager\Vendors.aspx.cs">
+      <DependentUpon>Vendors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Manager\Vendors.aspx.designer.cs">
+      <DependentUpon>Vendors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SubForms.master.cs">
+      <DependentUpon>SubForms.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\SubForms.master.designer.cs">
+      <DependentUpon>SubForms.master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Manager\Products.aspx.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Manager\Products.aspx.designer.cs">
+      <DependentUpon>Products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Manager\Stores.aspx.cs">
+      <DependentUpon>Stores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Manager\Stores.aspx.designer.cs">
+      <DependentUpon>Stores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Manager\Towns.aspx.cs">
+      <DependentUpon>Towns.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\Manager\Towns.aspx.designer.cs">
+      <DependentUpon>Towns.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UI\Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="UI\SubForms.master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <None Include="App_Data\UsersTest.pdf" />
+    <None Include="SVG\ShopHelper_Architecture.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShopHelperAsp.Common\ShopHelperAsp.Common.csproj">
+      <Project>{1A442F5C-387A-488C-B45B-78BB97E94DB9}</Project>
+      <Name>ShopHelperAsp.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShopHelperAsp.Data\ShopHelperAsp.Data.csproj">
+      <Project>{FAD183C0-98F1-4DDF-BCCB-322866F353C4}</Project>
+      <Name>ShopHelperAsp.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4145</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

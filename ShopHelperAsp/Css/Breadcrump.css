@@ -1,0 +1,105 @@
+﻿/*
+A5CEDC-светло синьото
+DC4D00-оранжевото
+808080-gray
+D4DEDF-светло сивото
+	*/
+
+div#BreadcrumpWrapper
+{
+	background-color:#282828;
+}
+
+	div#BreadcrumpWrapper #Breadcrump 
+	{
+		display:inline-block;
+		padding:5px;
+	}
+	
+		div#BreadcrumpWrapper #Breadcrump span.separator
+		{
+			display:none;
+		}
+	
+			div#BreadcrumpWrapper #Breadcrump span a
+			{
+				color:#282828;
+				background-color:#D4DEDF;
+				text-decoration:none;
+				padding-left:5px;
+				padding-right:5px;
+			}
+		
+			div#BreadcrumpWrapper #Breadcrump span a:hover
+			{
+				text-decoration:underline;
+			}
+			
+		/*средните node-ове*/
+		div#BreadcrumpWrapper #Breadcrump span:not(.currentNode):before
+		{
+			content: "";
+			border-top: 8px solid #D4DEDF;
+			border-bottom: 8px solid #D4DEDF;
+			border-left: 8px solid #282828;
+			display:inline-block;
+			vertical-align:middle;
+			position:relative;
+			top:-1px;
+			
+		}
+		
+		div#BreadcrumpWrapper #Breadcrump span:not(.separator):after
+		{
+			content: "";
+			border-top: 8px solid #282828;
+			border-bottom: 8px solid #282828;
+			border-left: 8px solid #D4DEDF;
+			display:inline-block;
+			vertical-align:middle;
+			position:relative;
+			top:-1px;
+			
+		}
+		
+		/*a в Span Home пъвия Node */
+		div#BreadcrumpWrapper #Breadcrump span:nth-child(2):before
+		{
+			border-left: 0;
+		}
+		
+		div#BreadcrumpWrapper #Breadcrump span.currentNode
+		{
+			color:#D4DEDF;
+			background-color:#DC4D00;
+			display:inline-block;
+		}
+		
+		/*current node back arrow*/
+		div#BreadcrumpWrapper #Breadcrump span.currentNode:before
+		{
+			content: "";
+			border-top: 8px solid #DC4D00;
+			border-bottom: 8px solid #DC4D00;
+			border-left: 8px solid #282828;
+			display:inline-block;
+			position:relative;
+			margin-right:5px;
+			vertical-align:middle;
+		}
+		
+		/*forward node back arrow*/
+		div#BreadcrumpWrapper #Breadcrump span.currentNode:after
+		{
+			content: "";
+			border-top: 8px solid #282828;
+			border-bottom: 8px solid #282828;
+			border-left: 8px solid #DC4D00;
+			display:inline-block;
+			position:relative;
+			left:8px;
+			vertical-align:middle;
+		}
+
+		
+		

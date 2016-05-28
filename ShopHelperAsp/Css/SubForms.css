@@ -1,0 +1,198 @@
+﻿/*
+A5CEDC-светло синьото
+DC4D00-оранжевото
+808080-gray
+D4DEDF-светло сивото
+	*/
+div#SubMenuWrapper
+{
+	float:left;
+}
+
+div.subFormsContentWrraper
+{
+	color:#282828;
+	background-color:#D4DEDF;
+	/*background-image:url("~/../../Images/test_sub_bg.png");
+	background-position:0%; 
+	background-repeat:repeat;*/ 
+	padding:10px;
+	float:left;
+	width:80%;
+	margin:0 auto;
+}
+
+	/*=========================== start Panels styles====================================*/	
+	div.subFormsContentWrraper div.panelsContainers
+	{
+		background-color:#f3f3f3;
+		width:49%;
+	}
+		/*=========================== start PanelsHeader styles====================================*/	
+		div.subFormsContentWrraper .panelsContainers .panelsHeaders
+		{
+			color:#fff;
+			background-color:#282828;
+			height:40px;
+			padding:10px 10px 0 10px;
+			text-align:center;
+			border-top-left-radius:3px;
+			border-top-right-radius:3px;
+			/*box-shadow:inset 0px 0px 20px 0px #fff;*/
+		}
+		
+			.panelsContainers .panelsHeaders hr
+			{
+				border:solid 1px #A5CEDC;
+			}
+		/*=========================== end PanelsHeader styles====================================*/	
+		
+		/*=========================== end PanelsContents styles====================================*/
+		div.subFormsContentWrraper .panelsContainers .panelsContents
+		{
+			padding:5px;
+		}
+				
+			div.subFormsContentWrraper .panelsContainers .panelsContents .panelsLabels
+			{
+				color:#282828;
+				background-color:#A5CEDC;
+				font-size:13px;
+				font-weight:bold;
+				padding:5px;
+				display:inline-block;
+				width:40%;
+				border-radius:2px;
+				text-align:right;
+			}
+			
+			div.subFormsContentWrraper .panelsContainers .panelsContents .panelsTextBoxes
+			{
+				border:1px solid #808080;
+				border-radius:3px;
+				padding-left:5px;
+				height:25px;
+			}
+			div.subFormsContentWrraper .panelsContainers .panelsContents .panelsTextBoxes:-webkit-autofill 
+			{
+				-webkit-box-shadow:0 0 0 50px white inset;
+			}
+			
+			div.subFormsContentWrraper .panelsContainers .panelsContents select.panelsDropDowns
+			{
+				display:inline-block;
+				border:1px solid #808080;
+				border-radius:3px;
+				padding:2px;
+				height:25px;
+			}
+			
+			
+			div.subFormsContentWrraper .panelsContainers .panelsContents .row
+			{
+				margin:5px 0 5px 0;
+			}
+		/*=========================== end PanelsContents styles====================================*/	
+		
+		/*=========================== start PanelsFooters styles====================================*/	
+		div.subFormsContentWrraper .panelsContainers .panelsFooters
+		{
+			color:#fff;
+			background-color:#282828;
+			height:40px;
+			line-height:40px;
+			vertical-align:middle;
+			text-align:center;
+			border-bottom-left-radius:3px;
+			border-bottom-right-radius:3px;
+		}
+		/*=========================== end PanelsFooters styles====================================*/	
+		
+		
+	/*=========================== start Panels styles====================================*/	
+	
+	/*=========================== start Buttons styles====================================*/
+	div.subFormsContentWrraper input[type="submit"]
+	{
+		margin:0 auto;
+		font-weight: bold;
+		border: 1px solid #603382;
+		border-style: outset;
+		border-radius: 3px;
+		padding: 1px 8px; 
+	}
+			
+	div.subFormsContentWrraper input[type="submit"]:hover
+	{
+		color:#D4DEDF;
+		background-color: #DC4D00;
+		border-style: inset; 
+		cursor:pointer;
+	}
+		
+	div.subFormsContentWrraper input[type="submit"]:active
+	{
+		position:relative;
+		top:2px;
+	}
+		
+	div.subFormsContentWrraper input[type="submit"]:focus,div.subFormsContentWrraper input[type="file"]:focus 
+	{
+		outline:0;
+	}	
+	/*=========================== end Buttons styles====================================*/
+	
+	/*=========================== start CheckBoxList_RolsCenter styles====================================*/
+	
+	table#CheckBoxListApplicationRoles,table#CheckBoxListRolesOfUser  
+	{
+		display:inline-block;
+		width:40%;
+		text-align:center;
+	}
+		table#CheckBoxListApplicationRoles tbody,table#CheckBoxListRolesOfUser tbody
+		{
+			display:inline-block;
+		}
+	
+			table#CheckBoxListApplicationRoles tbody tr,table#CheckBoxListRolesOfUser tbody tr
+			{
+				background-color:#DC4D00;
+				display:inline-block;
+				border-radius:2px;
+				margin:2px 4px 2px 0;
+				box-shadow:1px 1px 0px #888888;
+			}
+			
+			table#CheckBoxListApplicationRoles tbody tr td input,table#CheckBoxListApplicationRoles tbody tr td label,
+			#Users-container div.users-items div.items-headers-edit table#CheckBoxListRolesOfUser tbody tr td input,#Users-container div.users-items div.items-headers-edit table#CheckBoxListRolesOfUser tbody tr td label
+			{
+				color:#fff;
+				font-size:12px;
+				font-weight:bold;
+				vertical-align:middle;
+			}
+			#Users-container div.users-items div.items-headers-edit table#CheckBoxListRolesOfUser tbody tr td label
+			{
+				width:auto;
+			}
+			
+			table#CheckBoxListApplicationRoles tbody tr td label,#Users-container div.users-items div.items-headers-edit table#CheckBoxListRolesOfUser tbody tr td label
+			{
+				padding-left:2px;
+			}
+	/*=========================== end CheckBoxList__RolsCenter styles====================================*/
+		
+#MainFormContent,#MainFormHeader,#menuWrapper
+ {
+    zoom: 1;
+}
+
+     #MainFormContent:after,#MainFormHeader:after,#menuWrapper:after
+     {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+    }

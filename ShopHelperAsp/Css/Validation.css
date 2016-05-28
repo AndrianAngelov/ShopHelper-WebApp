@@ -1,0 +1,65 @@
+﻿/*
+A5CEDC-светло синьото
+DC4D00-оранжевото
+808080-gray
+D4DEDF-светло сивото ContentPlaceHolderColor
+F3F3F3-светло сиво почти бяло
+	*/
+	
+.validationArrow
+{
+	background:url("../Images/validation-arrow.png") 0 center no-repeat;
+	position:absolute;
+	height:20px;
+	width:20px;
+	left:-22%;
+	top:25%;
+	/*visibility:hidden;*/
+}
+.validationMessage
+{
+	position:absolute;
+	left:88%;
+	color:#fff;
+	background-color:#DC4D00;
+	font-weight:bold;
+	text-align:center;
+	border-radius:3px;
+	padding:2px 5px 2px 5px;
+}
+
+#editNameContainerIsValid
+{
+	color:#fff;
+	background-color:#DC4D00;
+	font-weight:bold;
+	text-align:center;
+	vertical-align:middle;
+	border-radius:3px;
+	padding:2px 5px 2px 5px;
+	display:inline-block;
+	width:35%;
+	height:4em;
+	position:relative;
+	/*top:1.6em;*/
+	left:30%;
+}
+
+#editNameIsValid
+{
+	background:url("../Images/validation-arrow.png") 0 cener no-repeat;
+	display:inline-block;
+	position:relative;
+	height:20px;
+	width:20px;
+	left:75%;
+	top:2.5em;
+	-webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+
+

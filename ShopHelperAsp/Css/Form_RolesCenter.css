@@ -1,0 +1,134 @@
+﻿/*
+A5CEDC-светло синьото
+DC4D00-оранжевото
+808080-gray
+D4DEDF-светло сивото ContentPlaceHolderColor
+F3F3F3-светло сиво почти бяло
+	*/
+#PanelCreateDeleteRolesWrapper
+{
+	margin:0 auto;
+	padding:10px 20px 0 20px;
+}
+
+	#PanelCreateNewRole,#PanelDeleteRole
+	{
+		display:inline-block;
+		min-width:380px;
+	}
+#PanelEditAndGridViewRolesWrapper
+{
+	padding:20px 20px 0 20px;
+}
+	#PanelEditAndGridViewRolesWrapper>div
+	{
+		display:inline-block;
+	}
+		#PanelEditRole 
+		{
+			vertical-align:top;
+		}
+			#PanelEditAndGridViewRolesWrapper>div:nth-child(2)
+			{
+				display:inline-block;
+				width:50%;
+			}
+/*=====================start Table Roles for Application Styles===============*/
+table#GridViewApplicationsRoles
+{
+	border-collapse: separate !important;
+	border:1px solid #282828;
+	border-radius: 3px; 
+	margin:0 auto;
+}
+
+	table#GridViewApplicationsRoles td,table#GridViewApplicationsRoles th
+	{
+		border-width:0px;
+	}
+
+	table#GridViewApplicationsRoles tr:first-child
+	{
+		color:#fff;
+		background-color:#282828;
+	}
+	
+		table#GridViewApplicationsRoles tr:nth-child(1) th
+		{
+			padding:10px;
+		}
+		
+		table#GridViewApplicationsRoles tr td
+		{
+			padding:5px;
+			background-color:#f3f3f3;
+			border-top:1px solid #282828;
+		}
+		
+		table#GridViewApplicationsRoles tr:nth-child(2n) td
+		{
+			background-color:#A5CEDC;
+		}
+		
+		table#GridViewApplicationsRoles tr td:first-child
+		{
+			border-right:1px solid #282828;
+		}
+		
+		table#GridViewApplicationsRoles tr:nth-child(1) th:first-child
+		{
+			border-right:1px solid #fff;
+		}
+/*=====================end Table Roles for Application Styles===============*/
+		
+/*=====================start Nasted Tables Roles for Application Styles===============*/
+table#GridViewApplicationsRoles table#DataListRoles tr
+{
+	color:#282828;
+}
+		
+	table#GridViewApplicationsRoles table#DataListRoles tr td
+	{
+		border-width:0;
+		background-color:#f3f3f3;
+	}
+	
+	table#GridViewApplicationsRoles tr:nth-child(2n) td table#DataListRoles tr td
+	{
+		border-width:0;
+		background-color:#A5CEDC;
+	}
+		
+/*=====================end Nasted Tablse Roles for Application Styles===============*/
+
+/*=========================== start InsertNewRole Loader styles====================================*/
+		#UpdatePanelInsertNewRole,
+		#UpdatePanelDeleteRole
+		{
+			position:relative;
+			
+		} 
+		
+			#UpdatePanelInsertNewRole #LoaderNewRole,
+			#UpdatePanelDeleteRole #LoaderDeleteRole
+			{
+				width:100%;
+				height:100%;
+				position:absolute;
+				background-color:rgba(40,40,40,0.8);
+				text-align:center;
+			}
+			
+				#UpdatePanelInsertNewRole #LoaderNewRole #LoadImageNewRole,
+				#UpdatePanelDeleteRole #LoaderDeleteRole #LoadImageDeleteRole
+				{
+					position:relative;
+					top:40%;
+				}
+/*=========================== end InsertNewRole Loader styles====================================*/
+/*		
+tr:first-child th:first-child { border-top-left-radius: 3px; }
+tr:first-child th:last-child{ border-top-right-radius: 3px; }
+tr:last-child th:first-child { border-bottom-left-radius: 3px; }
+tr:last-child th:last-child{ border-bottom-right-radius: 3px; }
+*/

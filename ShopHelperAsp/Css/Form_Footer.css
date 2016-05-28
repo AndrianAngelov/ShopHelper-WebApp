@@ -1,0 +1,236 @@
+﻿/*=========================== end Footer LINKS CONTAINER styles  ====================================*/ 
+footer section.footerLinkContainerWrapper
+{
+	padding:10px;
+	width:84%;
+	margin:0 auto;
+}
+	footer section.footerLinkContainerWrapper article
+	{
+		margin-right:40px;
+		margin-bottom:10px;
+		/*float:left;*/
+		display:inline-block;
+		position:relative;
+	}
+	footer section.footerLinkContainerWrapper article:nth-child(4),
+	footer section.footerLinkContainerWrapper article:nth-child(8)
+	{
+		margin-right:0;
+	}
+	
+		footer section.footerLinkContainerWrapper article ul
+		{
+			list-style-type:none;
+		}
+		
+		footer section.footerLinkContainerWrapper article a
+		{
+			color:#282828;
+			font-size:12px;
+			text-decoration:none;
+		}
+		
+		footer section.footerLinkContainerWrapper article span
+		{
+			color:#D4DEDF;
+			font-size:12px;
+			display:inline-block;
+			width:60px;
+		}
+		
+		footer section.footerLinkContainerWrapper article a:hover
+		{
+			text-decoration:underline;
+		}
+		
+footer section.footerLinkContainerWrapper
+{
+    zoom: 1;
+}
+
+     footer section.footerLinkContainerWrapper:after
+     {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+     }
+
+/*old version с линковете от sitemap-a*/
+/*footer section.footerLinkContainerWrapper
+{
+	padding:10px;
+}
+	footer section.footerLinkContainerWrapper article
+	{
+		margin-right:10px;
+		float:left;
+		position:relative;
+	}
+	
+		footer section.footerLinkContainerWrapper article a
+		{
+			color:#282828;
+		}
+		
+		footer section.footerLinkContainerWrapper article a:hover
+		{
+			color:rgb(220, 78, 0);
+		}
+		
+footer section.footerLinkContainerWrapper
+{
+    zoom: 1;
+}
+
+     footer section.footerLinkContainerWrapper:after
+     {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+     }*/	
+/*=========================== end Footer LINKS CONTAINER styles  ====================================*/ 
+
+
+/*=========================== end COMMON FOOTBAR styles  ====================================*/ 
+footer #FooterBar
+{
+	color:White;
+	background-color:rgb(40,40,40);
+	font-size:12px;
+	text-align:center;
+}
+	
+	
+	footer #FooterBar article
+	{
+		display:inline-block;
+		width:33%;
+		vertical-align:middle;
+	}
+	
+	footer #FooterBar article:nth-child(1)
+	{
+		text-align:left;
+	}
+	
+		footer #FooterBar article a, footer #FooterBar span
+		{
+			color:Gray;
+			text-decoration:none;
+		}
+		
+		footer #FooterBar article a:hover
+		{
+			text-decoration:underline;
+		}
+/*=========================== end COMMON FOOTBARstyles  ====================================*/ 		
+		
+/*=========================== start FOOTERBAR ELEMENT styles:copyright,company logo,social networks  ====================================*/ 			
+		/*3th article <li> and <a> tags select*/
+		footer #FooterBar article:nth-child(3) li,footer #FooterBar article:nth-child(3) a 
+		{
+			margin-left:10px;
+			color:red;
+			width:33px;
+			height:32px;
+			display:inline-block;
+		}
+		
+		footer #FooterBar article:nth-child(3) ul
+		{
+			list-style-type:none;
+		}
+			
+			footer #FooterBar ul #facebook a
+			{
+				border-radius:6px;
+				background:url(../../Images/social-media-gif.gif) no-repeat -96px 0;
+			}
+			footer #FooterBar ul #facebook a:hover
+			{
+				border-radius:6px;
+				background:url(../../Images/social-media-gif.gif) no-repeat -96px -32px;
+			}
+			
+			footer #FooterBar ul #youtube a
+			{
+				border-radius:6px;
+				background:url(../../Images/social-media-gif.gif) no-repeat -191px 0;
+			}
+		
+			footer #FooterBar ul #youtube a:hover
+			{
+				background:url(../../Images/social-media-gif.gif) no-repeat -191px -32px;
+			}
+			
+			footer #FooterBar ul #googlepluse a
+			{
+				border-radius:6px;
+				background:url(../../Images/social-media-gif.gif) no-repeat 1px 1px;
+			}
+		
+			footer #FooterBar ul #googlepluse a:hover
+			{
+				background:url(../../Images/social-media-gif.gif) no-repeat 1px -31px;
+			}
+/*=========================== end FOOTERBAR ELEMENT styles:copyright,company logo,social networks  ====================================*/ 
+
+/*=========================== Clear parent containers of floated children ====================================*/        
+/*
+footer #FooterBar
+{
+    zoom: 1;
+}
+
+     footer #FooterBar:after
+     {
+        content: "\0020";
+        display: block;
+        height: 0;
+        clear: both;
+        overflow: hidden;
+     }	
+ */
+     
+/*	footer #FooterBar ul li,footer #FooterBar ul li a
+	{
+		width:37px;
+		height:35px;
+		display:inline-block;
+	}
+*/
+	/*footer #FooterBar ul li:nth-child(1) a
+	{
+		width:37px;
+		height:35px;
+		display:inline-block;
+	}*/
+	/*
+	footer #FooterBar ul #face,footer #FooterBar ul 
+	{
+		background:url(../../Images/social-sprite-icons.png) no-repeat 0 0;
+	}
+	footer #FooterBar ul #face,footer #FooterBar ul #face a
+	{
+		background-position:0 0;
+	}
+	footer #FooterBar ul #you
+	{
+		background:url(../../Images/social-sprite-icons.png) -20 0;
+	}
+	footer #FooterBar ul #google
+	{
+		background:url(../../Images/social-sprite-icons.png) -40 0;
+	}
+	footer #FooterBar ul li:nth-child(3)
+	{
+		width:37px;
+		height:35px;
+		background:url(../../Images/social-sprite-icons.png) no-repeat 0 5;
+	}
+*/
